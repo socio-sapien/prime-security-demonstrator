@@ -9,7 +9,7 @@ This is a synthetic defensive evaluation harness, not a malware neutralizer, vul
 
 ## See the demonstration
 
-Open `site/index.html` locally. It is a self-contained visual replay of the checked-in evidence. It uses no external scripts, analytics, uploads or network calls. The page does not run PRIME in your browser; regenerate the data with Python to reproduce it.
+[Open the visual demonstration](https://socio-sapien.github.io/prime-security-demonstrator/site/) or open `site/index.html` locally. It is a self-contained visual replay of the checked-in evidence. It uses no external scripts, analytics, uploads or network calls. The page does not run PRIME in your browser; regenerate the data with Python to reproduce it.
 
 ```sh
 git clone https://github.com/socio-sapien/prime-security-demonstrator.git
