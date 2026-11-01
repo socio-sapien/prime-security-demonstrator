@@ -1,0 +1,21 @@
+name: Reproduce defensive demo
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  synthetic-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tests -v
+      - run: |
+          python3 security_demo.py > /tmp/replay.json
+          cmp evidence/replay.json /tmp/replay.json
+          python3 security_demo.py --verify evidence/single-case.json
+          python3 outreach_plan.py > /tmp/outreach.json
+          cmp evidence/outreach-preflight.json /tmp/outreach.json
+          python3 build_visual.py
+          git diff --exit-code -- site/index.html

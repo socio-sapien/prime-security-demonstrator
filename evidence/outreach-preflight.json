@@ -1,0 +1,44 @@
+{
+  "mode": "OFFLINE DRY RUN; NOTHING SENT",
+  "repository": "https://github.com/socio-sapien/prime-security-demonstrator",
+  "review_package": {
+    "stage": "owner_review",
+    "status": "READY_FOR_OWNER_REVIEW",
+    "missing_evidence": [],
+    "external_effects": 0,
+    "limit": "Boolean fixtures simulate evidence; they cannot authenticate approval or establish an external outcome."
+  },
+  "unapproved_send": {
+    "stage": "send",
+    "status": "BLOCKED",
+    "missing_evidence": [
+      "authenticated_owner_send_approval"
+    ],
+    "external_effects": 0,
+    "limit": "Boolean fixtures simulate evidence; they cannot authenticate approval or establish an external outcome."
+  },
+  "unearned_close": {
+    "stage": "contract_or_payment",
+    "status": "BLOCKED",
+    "missing_evidence": [
+      "voluntary_terms_agreed",
+      "authenticated_commitment_approval"
+    ],
+    "external_effects": 0,
+    "limit": "Boolean fixtures simulate evidence; they cannot authenticate approval or establish an external outcome."
+  },
+  "evaluation_without_reply": {
+    "stage": "evaluation",
+    "status": "BLOCKED",
+    "missing_evidence": [
+      "confirmed_interest",
+      "problem_owner_named",
+      "sample_authorization",
+      "scope_agreed",
+      "baseline_agreed"
+    ],
+    "external_effects": 0,
+    "limit": "Boolean fixtures simulate evidence; they cannot authenticate approval or establish an external outcome."
+  },
+  "integrity_sha256": "8970cc44ddc69228cfd0d57f9e6a27947a58edb454f52cc9a89a75c9a1fc8b9d"
+}

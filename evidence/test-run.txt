@@ -1,0 +1,31 @@
+test_no_sale_without_terms (test_outreach.OutreachTests.test_no_sale_without_terms) ... ok
+test_no_send_without_authenticated_review (test_outreach.OutreachTests.test_no_send_without_authenticated_review) ... ok
+test_simulated_approval_does_not_claim_sent (test_outreach.OutreachTests.test_simulated_approval_does_not_claim_sent) ... ok
+test_action_limit (test_security_demo.DemonstratorTests.test_action_limit) ... ok
+test_all_receipts_verify (test_security_demo.DemonstratorTests.test_all_receipts_verify) ... ok
+test_all_replays_match_expectations (test_security_demo.DemonstratorTests.test_all_replays_match_expectations) ... ok
+test_approval_expires_at_boundary (test_security_demo.DemonstratorTests.test_approval_expires_at_boundary) ... ok
+test_bad_action_schema_is_denied (test_security_demo.DemonstratorTests.test_bad_action_schema_is_denied) ... ok
+test_core_hash_guard (test_security_demo.DemonstratorTests.test_core_hash_guard) ... ok
+test_core_is_preserved (test_security_demo.DemonstratorTests.test_core_is_preserved) ... ok
+test_embedded_text_is_not_executed (test_security_demo.DemonstratorTests.test_embedded_text_is_not_executed) ... ok
+test_hash_is_not_signature (test_security_demo.DemonstratorTests.test_hash_is_not_signature) ... ok
+test_invalid_approval_schema_rejected (test_security_demo.DemonstratorTests.test_invalid_approval_schema_rejected) ... ok
+test_keyword_baseline_has_false_positives_and_misses (test_security_demo.DemonstratorTests.test_keyword_baseline_has_false_positives_and_misses) ... ok
+test_known_semantic_misses_remain_visible (test_security_demo.DemonstratorTests.test_known_semantic_misses_remain_visible) ... ok
+test_metrics_are_not_gate (test_security_demo.DemonstratorTests.test_metrics_are_not_gate) ... ok
+test_modified_event_fails_receipt (test_security_demo.DemonstratorTests.test_modified_event_fails_receipt) ... ok
+test_modified_source_fails_receipt (test_security_demo.DemonstratorTests.test_modified_source_fails_receipt) ... ok
+test_no_network_or_process_adapter (test_security_demo.DemonstratorTests.test_no_network_or_process_adapter) ... ok
+test_reordered_events_fail_receipt (test_security_demo.DemonstratorTests.test_reordered_events_fail_receipt) ... ok
+test_replay_is_deterministic (test_security_demo.DemonstratorTests.test_replay_is_deterministic) ... ok
+test_single_use_under_concurrency (test_security_demo.DemonstratorTests.test_single_use_under_concurrency) ... ok
+test_source_paired_numeric_and_polarity_cues (test_security_demo.DemonstratorTests.test_source_paired_numeric_and_polarity_cues) ... ok
+test_text_limit (test_security_demo.DemonstratorTests.test_text_limit) ... ok
+test_unicode_observables (test_security_demo.DemonstratorTests.test_unicode_observables) ... ok
+test_unknown_case_fields_rejected (test_security_demo.DemonstratorTests.test_unknown_case_fields_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.078s
+
+OK

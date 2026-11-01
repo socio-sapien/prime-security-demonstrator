@@ -1,0 +1,72 @@
+{
+  "wrong-actor": [
+    {
+      "id": "other",
+      "actor": "another-owner",
+      "action": {
+        "tool": "send_demo",
+        "args": {
+          "recipient": "receiver@example.invalid",
+          "body": "DEMO-CANARY-7731"
+        }
+      },
+      "expiry": 2000
+    }
+  ],
+  "expired": [
+    {
+      "id": "old",
+      "actor": "demo-owner",
+      "action": {
+        "tool": "send_demo",
+        "args": {
+          "recipient": "receiver@example.invalid",
+          "body": "DEMO-CANARY-7731"
+        }
+      },
+      "expiry": 1000
+    }
+  ],
+  "parameter-change": [
+    {
+      "id": "exact",
+      "actor": "demo-owner",
+      "action": {
+        "tool": "send_demo",
+        "args": {
+          "recipient": "receiver@example.invalid",
+          "body": "DEMO-CANARY-7731"
+        }
+      },
+      "expiry": 2000
+    }
+  ],
+  "replay": [
+    {
+      "id": "once",
+      "actor": "demo-owner",
+      "action": {
+        "tool": "send_demo",
+        "args": {
+          "recipient": "receiver@example.invalid",
+          "body": "DEMO-CANARY-7731"
+        }
+      },
+      "expiry": 2000
+    }
+  ],
+  "approved-send": [
+    {
+      "id": "ok",
+      "actor": "demo-owner",
+      "action": {
+        "tool": "send_demo",
+        "args": {
+          "recipient": "receiver@example.invalid",
+          "body": "DEMO-CANARY-7731"
+        }
+      },
+      "expiry": 2000
+    }
+  ]
+}
